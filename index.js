@@ -91,20 +91,24 @@ app.use("/api/reclamations",reclamationRoutes);
 
 
 
-const port = process.env.PORT || 5000;
-/** POST: http://localhost:8080/uploads  */
-//  app.post("/uploads", async (req, res) => {
-//      const body = req.body;
-//      try{
-//          const newImage = await Post.create(body)
-//          newImage.save();
-//          res.status(201).json({ msg : "New image uploaded...!"})
-//      }catch(error){
-//          res.status(409).json({ message : error.message })
-//     }
-//  })
+// const port = process.env.PORT || 5000;
+// /** POST: http://localhost:8080/uploads  */
+// //  app.post("/uploads", async (req, res) => {
+// //      const body = req.body;
+// //      try{
+// //          const newImage = await Post.create(body)
+// //          newImage.save();
+// //          res.status(201).json({ msg : "New image uploaded...!"})
+// //      }catch(error){
+// //          res.status(409).json({ message : error.message })
+// //     }
+// //  })
 
-app.listen(port, console.log(`Listening on port ${port}...`));
+// app.listen(port, console.log(`Listening on port ${port}...`));
+const PORT = process.env.PORT || 10000;
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server is running on port ${PORT}`);
+});
 
 console.log("")
 
