@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "set NODE_ENV=dev && nodemon index.js"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -31,7 +31,8 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.21.2",
-    "@types/react": "^18.0.28"
+    "@types/react": "^18.0.28",
+    "webpack-cli": "^5.1.4"
   },
   "description": ""
 }
